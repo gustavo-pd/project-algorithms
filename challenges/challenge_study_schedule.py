@@ -1,9 +1,9 @@
 def study_schedule(permanence_period, target_time):
     try:
+        sum = 0
         for i, value in permanence_period:
-            count = 0
             if target_time >= i and int(target_time) <= value:
-                count += 1
-        return count
+                sum += 1
+        return sum
     except TypeError:
         return None
